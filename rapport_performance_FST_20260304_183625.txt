@@ -1,0 +1,75 @@
+================================================================
+   UNIVERSITÉ CADI AYYAD — MARRAKECH
+   Faculté des Sciences et Techniques
+   Département Informatique
+   TP CAPSTONE — JPA / HIBERNATE
+   Rapport d'Analyse des Performances v2.0
+================================================================
+Date d'exécution : 2026-03-04 18:36:25
+================================================================
+
+Scénario testé : Recherche multi-critères
+  Durée d'exécution        : 5 ms
+  Requêtes SQL émises       : 1
+  Entités chargées          : 0
+  Accès réussis au cache    : 0
+  Accès manqués au cache    : 0
+  Volume des résultats      : 0 élément(s)
+  Taux d'efficacité du cache : 0,00%
+  ---------------------------------------------------------------
+
+Scénario testé : Recherche de salles disponibles
+  Durée d'exécution        : 13 ms
+  Requêtes SQL émises       : 1
+  Entités chargées          : 25
+  Accès réussis au cache    : 0
+  Accès manqués au cache    : 0
+  Volume des résultats      : 15 élément(s)
+  Taux d'efficacité du cache : 0,00%
+  ---------------------------------------------------------------
+
+Scénario testé : Pagination
+  Durée d'exécution        : 4 ms
+  Requêtes SQL émises       : 1
+  Entités chargées          : 17
+  Accès réussis au cache    : 0
+  Accès manqués au cache    : 0
+  Volume des résultats      : 10 élément(s)
+  Taux d'efficacité du cache : 0,00%
+  ---------------------------------------------------------------
+
+Scénario testé : Accès répété avec cache
+  Durée d'exécution        : 71 ms
+  Requêtes SQL émises       : 0
+  Entités chargées          : 600
+  Accès réussis au cache    : 0
+  Accès manqués au cache    : 0
+  Volume des résultats      : 1 élément(s)
+  Taux d'efficacité du cache : 0,00%
+  ---------------------------------------------------------------
+
+Scénario testé : Requête avec JOIN FETCH
+  Durée d'exécution        : 6 ms
+  Requêtes SQL émises       : 1
+  Entités chargées          : 19
+  Accès réussis au cache    : 0
+  Accès manqués au cache    : 0
+  Volume des résultats      : 9 élément(s)
+  Taux d'efficacité du cache : 0,00%
+  ---------------------------------------------------------------
+
+================================================================
+   ANALYSE ET RECOMMANDATIONS
+================================================================
+
+3. Bonnes pratiques générales :
+   - Il est recommandé de surveiller régulièrement les performances
+     à l'aide d'outils spécialisés tels que JProfiler ou VisualVM.
+   - La mise en place d'un système de supervision en environnement de production
+     permettrait de détecter rapidement toute dégradation des performances.
+   - L'adoption d'un pool de connexions performant comme HikariCP
+     est vivement conseillée pour les déploiements à charge élevée.
+
+================================================================
+   Fin du rapport — FST Marrakech — Département Informatique
+================================================================
